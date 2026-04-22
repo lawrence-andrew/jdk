@@ -45,7 +45,7 @@ import static java.awt.event.KeyEvent.VK_SHIFT;
 public class SetShortCutTest {
     public static void main(String[] args) throws Exception {
         boolean isMac = System.getProperty("os.name").startsWith("Mac");
-        String shortcut = "Ctrl+Shift+";
+        String shortcut = " Ctrl+Shift+";
         if (isMac) {
             shortcut = KeyEvent.getKeyText(VK_SHIFT) + "+" + KeyEvent.getKeyText(VK_META);
         }
